@@ -183,5 +183,9 @@ Retrieves the WebDriver instance from DriverFactory.
 	        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();
 	        js.executeScript("arguments[0].scrollIntoView(true);", element);
 	    }
+	    // Make this method public or protected so subclasses can access it
+	    public WebDriver getDriver() {
+	        return DriverFactory.getInstance().getDriver();
+	    }
 
 }

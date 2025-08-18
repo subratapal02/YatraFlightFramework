@@ -134,9 +134,14 @@ public class HomePage extends BaseTest{
     private List<WebElement> resultList; 
 
     //
-    public HomePage() {
-		PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
-	}
+//    public HomePage() {
+//		PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
+//		
+//	}
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this); // Initialize WebElements for this driver
+    }
     
     @Step("Navigate to Yatra.com")
     public void navigateToYatra() {
@@ -146,13 +151,14 @@ public class HomePage extends BaseTest{
     
     @Step("Close login popup if present")
     public void closeLoginPopupIfPresent() {
+    	waitUntilElementVisibility(loginPopupCloseButton);
     	sleep(1000);
     	closePopupIfPresent(loginPopupCloseButton);
     }
     @Step("Verify Page open Yatra.com")
     public void verifyLandingPage() {
 		waitUntilElementVisibility(yatra);
-		
+		sleep(1000);
     	
 	}
     

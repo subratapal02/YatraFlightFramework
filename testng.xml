@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="YatraFlightFramework" parallel="classes" thread-count="5">
+<suite name="YatraFlightFramework" parallel="tests" thread-count="2">
 
     <listeners>
         <listener class-name="listeners.ListernersImplementation"/>
@@ -17,5 +17,6 @@
             <!--<class name="tests.YatraFlightBookingTest2"/> -->
         </classes>
     </test>
+    
 
 </suite> 
