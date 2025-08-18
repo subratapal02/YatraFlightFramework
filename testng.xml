@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="YatraFlightFramework" parallel="classes" thread-count="5">
+
+    <listeners>
+        <listener class-name="listeners.ListernersImplementation"/>
+         <listener class-name="utils.CustomListeners"/>
+       <!-- <listener class-name="listeners.AllureListeners"/> -->
+    </listeners>
+
+    <test name="YatraFlightFramework Tests">
+        <classes>
+            <class name="tests.YatraFlightBookingTest"/>
+            
+            
+            
+           
+            <!--<class name="tests.YatraFlightBookingTest2"/> -->
+        </classes>
+    </test>
+
+</suite> 
