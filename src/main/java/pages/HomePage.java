@@ -123,6 +123,15 @@ public class HomePage extends BaseTest{
     
     @FindBy(xpath = "//div[@class='viewport']/div/li")  // dropdown items
     private List<WebElement> dropdownOptions;
+ // Dropdown option lists for dynamic travellers
+    @FindBy(xpath = "//p[@aria-label='Adult']/following-sibling::div//ul/li")
+    private List<WebElement> adultOptions;
+
+    @FindBy(xpath = "//p[@aria-label='Child']/following-sibling::div//ul/li")
+    private List<WebElement> childOptions;
+
+    @FindBy(xpath = "//p[@aria-label='Infant']/following-sibling::div//ul/li")
+    private List<WebElement> infantOptions;
     
     
     @FindBy(xpath = "//td[contains(@class,'date') or contains(@class,'MuiPickersDay-root')]")
@@ -130,14 +139,14 @@ public class HomePage extends BaseTest{
 
     @FindBy(xpath = "//td[contains(@class,'MuiPickersDay-root')]//div[contains(@class,'lowest-price')]")
     private List<WebElement> lowestPriceDates;
-    @FindBy(xpath = "//div[@class=\"full-width wrapper\"]")
+//    @FindBy(xpath = "//div[@class=\"full-width wrapper\"]")
+//    private List<WebElement> resultList; 
+    
+    @FindBy(xpath = "//div[contains(@class, 'flightItem') and contains(@class, 'border-shadow') and contains(@class, 'pr')]")
     private List<WebElement> resultList; 
+  
 
-    //
-//    public HomePage() {
-//		PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
-//		
-//	}
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); // Initialize WebElements for this driver
@@ -294,15 +303,7 @@ public class HomePage extends BaseTest{
                     "Failed to set travellers");
         }
     }
- // Dropdown option lists for dynamic travellers
-    @FindBy(xpath = "//p[@aria-label='Adult']/following-sibling::div//ul/li")
-    private List<WebElement> adultOptions;
-
-    @FindBy(xpath = "//p[@aria-label='Child']/following-sibling::div//ul/li")
-    private List<WebElement> childOptions;
-
-    @FindBy(xpath = "//p[@aria-label='Infant']/following-sibling::div//ul/li")
-    private List<WebElement> infantOptions;
+ 
     // ---------- Travellers ----------
     private void selectFromOptions(List<WebElement> options, int value) {
         for (WebElement option : options) {

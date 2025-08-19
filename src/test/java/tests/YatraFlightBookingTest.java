@@ -82,12 +82,14 @@ public class YatraFlightBookingTest extends BaseTest{
 	        AllureLogger.logStepWithScreenshots("All Flights List", () -> {
 				try {
 					home.printAllFlightResults();
+					sleep(10000);
+			        scrollPage(500);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			});
-	        sleep(10000);
+	        sleep(500);
 	        
 
 	        System.out.println("Test finished successfully!");

@@ -2,7 +2,7 @@
 <suite name="YatraFlightFramework" parallel="tests" thread-count="2">
 
     <listeners>
-        <listener class-name="listeners.ListernersImplementation"/>
+        <listener class-name="utils.ListernersImplementation"/>
          <listener class-name="utils.CustomListeners"/>
        <!-- <listener class-name="listeners.AllureListeners"/> -->
     </listeners>

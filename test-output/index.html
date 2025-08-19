@@ -161,12 +161,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;YatraFlightFramework&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;YatraFlightFramework&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;listeners.ListernersImplementation&quot;/&gt;
+    &lt;listener class-name=&quot;utils.ListernersImplementation&quot;/&gt;
     &lt;listener class-name=&quot;utils.CustomListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;YatraFlightFramework Tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;YatraFlightFramework Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.YatraFlightBookingTest&quot;/&gt;
     &lt;/classes&gt;
@@ -212,11 +212,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testFlightBooking')
 data.setCell(0, 2, 'tests.YatraFlightBookingTest')
-data.setCell(0, 3, 86356);
+data.setCell(0, 3, 83931);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testFlightBooking')
 data.setCell(1, 2, 'tests.YatraFlightBookingTest')
-data.setCell(1, 3, 85774);
+data.setCell(1, 3, 82863);
 window.suiteTableData['YatraFlightFramework']= { tableData: data, tableDiv: 'times-div-YatraFlightFramework'}
 return data;
 }
@@ -257,20 +257,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testFlightBooking(Run2)</span>
-                <span class="method-start">3911 ms</span>
+                <span class="method-name">testFlightBooking(Run1)</span>
+                <span class="method-start">5651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testFlightBooking(Run1)</span>
-                <span class="method-start">4477 ms</span>
+                <span class="method-name">testFlightBooking(Run2)</span>
+                <span class="method-start">6236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TestTearDown</span>
-                <span class="method-start">90469 ms</span>
+                <span class="method-start">89311 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">TestTearDown</span>
-                <span class="method-start">90469 ms</span>
+                <span class="method-start">89793 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
