@@ -29,10 +29,31 @@ It implements the **Page Object Model (POM)**, supports **parallel execution**, 
 ## **Project Setup**
 ----------------------------
 Download project zip folder and extract file
-
 **Open in Eclipse**
 ----------------------------
 File → Import → Existing Maven Project → Select project folder → Finish
+
+**OR**
+
+**Open Eclipse and Initiate Import:**
+**Launch Eclipse.**
+Go to File > Import....
+In the "Import" dialog, expand the "Git" folder and select Projects from Git (with smart import). Click Next.
+then
+<img width="756" height="515" alt="image" src="https://github.com/user-attachments/assets/0224a855-9757-4c1c-8853-dfe72e1233fd" />
+https://github.com/subratapal02/YatraFlightFramework.git
+
+Paste the copied GitHub repository URL into the URI field. Eclipse will often automatically populate the Host and Repository path.
+
+<img width="743" height="570" alt="image" src="https://github.com/user-attachments/assets/320df1b3-c03d-45df-a1e0-1d9abe2fd67f" />
+
+<img width="745" height="607" alt="image" src="https://github.com/user-attachments/assets/c9b5dbee-b7fa-467c-9bbf-a423ab7a4ff1" />
+
+Import as Eclipse Project:
+Eclipse will analyze the cloned content and attempt to detect the project type (e.g., Maven Eclipse project).
+Select the detected project(s) you wish to import into your workspace.
+Click Finish.
+
 
 **Execution Instructions:**
 ----------------------------
