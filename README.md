@@ -38,7 +38,7 @@ File → Import → Existing Maven Project → Select project folder → Finish
 ----------------------------
 **Run Tests in Non-Headless Mode**
 ----------------------------
-**Headless Mode Execution Video**
+**Headless Mode Execution Recording**
 [https://youtu.be/FOHy2zkn2pw](https://youtu.be/8-DgIeJCfyE)
 
 Open *applications.properties*
@@ -60,10 +60,10 @@ headless=true
 
 **Parallel Execution**
 ----------------------------
-**Parallel Execution Video**
+**Parallel Execution Recording**
 https://youtu.be/FOHy2zkn2pw
 
-**Parallel Execution repoet sccrenshot**
+**Parallel Execution report sccrenshot**
 <img width="1918" height="575" alt="image" src="https://github.com/user-attachments/assets/d54d402e-0113-483f-b561-297577edcfd4" />
 
 **Configured in testng.xml:**
@@ -77,11 +77,13 @@ Adjust thread-count as needed.
 
 **Allure reports**
 -------------------
+**After the execution completes successfully, Allure reports are generated automatically and the report opens in the browser automatically.**
+
 <img width="1915" height="971" alt="image" src="https://github.com/user-attachments/assets/590af242-b731-4ce8-b9d3-377ca6454cc5" />
 <img width="1910" height="946" alt="image" src="https://github.com/user-attachments/assets/7912d02c-7c62-4098-9b2e-5df3fd1cf0c4" />
 
 
-Execution report link:http://127.0.0.1:57728/#suites/46b261ce93b2afa0244c023bc623d837/e9a10fcfc0a0ba3a/
+**Execution report link**:http://127.0.0.1:57728/#suites/46b261ce93b2afa0244c023bc623d837/e9a10fcfc0a0ba3a/
 
 
 Test Steps Automated
@@ -114,7 +116,7 @@ o 3 Adults
 
 o 2 Children
 
-o 3 Infants
+o 1 Infants
 
 9. Click search and display all results in list format.
 
